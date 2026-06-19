@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamza Khan Sherwani | Image Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            box-sizing: border-box;
+
+        }
+
+        body{
+
+             background:linear-gradient( to right, #f8f6f8,#f6f3f3,#f8f6f7
+    );
+
+        }
+
+        .Title{
+            border: 0px solid red;
+            padding:20px;
+            text-align: center;
+            box-shadow: 0px 0px 0px 0px black;
+            color:white;
+            background:linear-gradient(90deg, #ff4d4d, #ff0080);
+
+        }
+
+        footer {
+           
+            border: 0px solid red;
+            padding:20px;
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            gap:10px;
+            background:linear-gradient(90deg, #ff4d4d, #ff0080);
+         
+            
+
+        }
+
+        footer p {
+
+            color:white;
+            
+        }
+        
+        
+        .container{
+            border: 0px solid black;
+            padding:20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap:20px;
+
+          
+        }
+
+        .card{
+
+            padding:10px;
+            border: 0px solid rgb(16, 15, 15);
+            border-radius: 5px;
+            background:white;
+            height:50vh;
+            width: 20vw;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+        
+
+        
+
+        }
+
+        .card:hover{
+             
+            transform: scale(1.03);
+            box-shadow: 0px 0px 10px 0px black;
+            
+
+        }
+
+        img{
+
+            border-radius: 5px;
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            transition: 0.3s ease-in-out;
+
+        }
+
+        img:hover{
+            transform: translateY(-3px)
+        }
+
+        button{
+
+            border: none;
+            background:linear-gradient(90deg, #ff4d4d, #ff0080);
+            color:white;
+            font-weight: bold;
+            padding:10px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        
+            position: relative;
+            top:20px;
+            left: 70px;
+           
+
+        }
+
+        button:hover{
+            transform: scale(1.05);
+            box-shadow: 0px 0px 5px black;
+
+        }
+
+        i{
+            position: relative;
+            top:1px;
+        }
+
+        @media  screen and ( max-width:600px) {
+
+            .Title{
+                padding:10px;
+            }
+
+            .Title h1{
+                font-size: 20px;
+            }
+
+            .container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap:20px;
+                flex-wrap: wrap;
+            }
+
+            .card h2{
+                font-size: 15px;
+            }
+            .card p {
+                font-size: 14px;
+            }
+
+            .card{
+                width:90%;
+                height:auto;
+                border-radius: 10px;
+            }
+
+            .card img {
+                width:100%;
+                object-fit: cover;
+            }
+
+            button{
+                position:static;
+                margin-top:15px;
+                width:100%;
+                padding:10px;
+            }
+
+           
+
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <nav class="Title">
+        <h1>Welcome to Image Gallery</h1>
+    </nav>
+
+    <div class="container">
+      <div class="card">
+     <img src="forest.jpg" alt="forest">
+    <h2>Forest</h2>
+    <p>Beautiful green forest with peaceful natural scenery.</p>
+    <button>View Image <i class="fa-sharp fa-solid fa-right-long"></i></button>
+</div>
+
+<div class="card">
+    <img src="Mountains.jpg" alt="Mountain">
+    <h2>Mountain</h2>
+    <p>Majestic mountains surrounded by fresh nature.</p>
+    <button>View Image <i class="fa-sharp fa-solid fa-right-long"></i></button>
+    
+</div>
+
+<div class="card">
+    <img src="Lakes.jpg" alt="Lake">
+    <h2>Lake</h2>
+    <p>Calm lake view with beautiful landscapes.</p>
+    <button>View Image <i class="fa-sharp fa-solid fa-right-long"></i></button>
+</div>
+
+<div class="card">
+    <img src="https://images.unsplash.com/photo-1433086966358-54859d0ed716" alt="Waterfall">
+    <h2>Waterfall</h2>
+    <p>Fresh waterfall flowing through nature.</p>
+    <button>View Image <i class="fa-sharp fa-solid fa-right-long"></i></button>
+</div>
+
+<div class="card">
+   <img src="river.jpg" alt="river">
+    <h2>River</h2>
+    <p>Beautiful river surrounded by greenery.</p>
+    <button>View Image <i class="fa-sharp fa-solid fa-right-long"></i></button>
+</div>
+
+<div class="card">
+    <img src="flowers.jpg" alt="flowers">
+    <h2>Flowers</h2>
+    <p>Colorful flowers creating a peaceful view.</p>
+    <button>View Image <i class="fa-sharp fa-solid fa-right-long"></i></button>
+</div>
+
+<div class="card">
+    <img src="beach3.jpg" alt="beach">
+    <h2>Beach</h2>
+    <p>Ocean waves with a beautiful beach scene.</p>
+    <button>View Image <i class="fa-sharp fa-solid fa-right-long"></i></button>
+</div>
+
+<div class="card">
+    <img src="landscape.jpg" alt="landscape">
+    <h2>Landscape</h2>
+    <p>Wide natural landscape with mountains.</p>
+    <button>View Image <i class="fa-sharp fa-solid fa-right-long"></i></button>
+</div>
+
+<div class="card">
+    <img src="trees.jpg" alt="trees">
+    <h2>Trees</h2>
+    <p>Green trees showing the beauty of nature.</p>
+    <button>View Image <i class="fa-sharp fa-solid fa-right-long"></i></button>
+</div>
+
+<div class="card">
+    <img src="forestroad.jpg" alt="forestroad">
+    <h2>Forest Road</h2>
+    <p>A peaceful road inside a natural forest.</p>
+    <button>View Image <i class="fa-sharp fa-solid fa-right-long"></i></button>
+</div>
+
+<div class="card">
+   <img src="Mountainview.jpg" alt="mountainview">
+    <h2>Mountain View</h2>
+    <p>Beautiful mountain scenery with fresh air.</p>
+    <button>View Image <i class="fa-sharp fa-solid fa-right-long"></i></button>
+</div>
+
+<div class="card">
+   <img src="nature.jpg" alt="nature">
+    <h2>Nature</h2>
+    <p>Amazing natural view full of beauty.</p>
+    <button>View Image <i class="fa-sharp fa-solid fa-right-long"></i></button>
+</div>
+
+<div class="card">
+    <img src="greenfeild.jpg" alt="greenfield">
+    <h2>Green Field</h2>
+    <p>Fresh green fields under the open sky.</p>
+    <button>View Image <i class="fa-sharp fa-solid fa-right-long"></i></button>
+</div>
+
+<div class="card">
+    <img src="snowmountains.jpg" alt="snow mountains">
+    <h2>Snow Mountain</h2>
+    <p>Snow-covered mountains with amazing views.</p>
+    <button>View Image <i class="fa-sharp fa-solid fa-right-long"></i></button>
+</div>
+
+<div class="card">
+    <img src="sunset.jpg" alt="sunset">
+    <h2>Sunset</h2>
+    <p>Beautiful sunset with warm natural colors.</p>
+    <button>View Image <i class="fa-sharp fa-solid fa-right-long"></i></button>
+</div>
+
+<div class="card">
+   <img src="natureview.jpg" alt="nature view">
+    <h2>Nature View</h2>
+    <p>Relaxing nature scenery for peaceful moments.</p>
+    <button>View Image <i class="fa-sharp fa-solid fa-right-long"></i></button>
+</div>
+    </div>
+
+    <footer>
+
+        <p>&copy; <p> Hamza Khan Sherwnai | Image Gallery 2026 </p>
+       
+    </footer>
+</body>
+</html>
